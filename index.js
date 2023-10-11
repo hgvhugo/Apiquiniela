@@ -87,7 +87,6 @@ app.post('/api/quinielas/equipos', async (req, res) => {
     // Print the results
     res.json({ status: 'ok', num: numb, equipo: req.body.equipo });
 
-
 });
 
 
