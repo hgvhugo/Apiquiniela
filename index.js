@@ -24,6 +24,8 @@ app.use(
 );
 
 app.use(cors({ credentials: true, origin: 'http://localhost:3010' }));
+app.use(cors({ credentials: true, origin: 'http://ec2-18-220-50-97.us-east-2.compute.amazonaws.com:3000/' }));
+
 
 const limiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes
